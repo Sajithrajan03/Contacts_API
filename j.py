@@ -23,7 +23,7 @@ x = datetime.now()
 
 #@title Enter the Participant's Access Token
 
-google_access_token = 'ya29.a0AfB_byDEptQ6lUnNNblsDnSCr3Vd9T9SKXcj_RtyrhajsLqYD4Jw3tghj2eWcFvCqH7jLk9O5ogC2NSxZjuvQ5zk9SlOGAARnGP4fidD3pKbJiHwW_W4ylGvJBeX0O9uUNClEZw5HGOD0EJePk0p8Dp874TZmmR5UbWCaCgYKAfMSARESFQGOcNnCXtCJlotDTgLxzYhUxktotw0171'
+google_access_token = 'ya29.a0AfB_byANyYpWbgl2Ys2vY0OIe0ThVEr7IyfSXaBf2WG6X5_jJWsb00U_dXDN7503KsMTXr3tkheNDKgK42r2QBmmx2974HiwOBSuIcXlgVfb3rTjlEfXqiaap0dqdCLdBAwf7Uiuo6l2gwH-VtQVxZftHbJqR8kvxLx6aCgYKAYESARESFQGOcNnCOopqkTyPnEf2aKObO2R1YQ0171'
 
 print('Access Token: '+google_access_token)
 year_string = '2023'  
@@ -38,7 +38,7 @@ start_time =int(datetime(int(year_string), int(month_string),
                          int(day_string)).timestamp()*1000)
 print(end_time,start_time)
 
-api_url = "https://www.googleapis.com/fitness/v1/users/me/dataset:aggregate"
+api_url = "https://www.googleapis.com/auth/fitness.activity.read"
 
 g_access_token = google_access_token
 
